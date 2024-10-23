@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTJS Buổi 6</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- In tất cả số nguyên dương lẻ / chẵn nhỏ hơn 100 -->
+    <div class="bg-orange-400 px-8 py-4 text-white text-xl">
+      Số chẵn nhỏ hơn 100: <span id="showSoChan"></span>
+    </div>
+    <div class="bg-orange-400 px-8 py-4 text-white mt-4 text-xl">
+      Số lẻ nhỏ hơn 100: <span id="showSoLe"></span>
+    </div>
+    <!-- Tính tổng các số chẵn từ 1 đến n. -->
+    <br />
+    <br />
+    <hr />
+    <div class="container mx-auto">
+      <div class="flex flex-col">
+        <input
+          id="soTuNhienInput"
+          placeholder="Nhập 1 số tự nhiên bất kì"
+          type="text"
+          class="text-center text-white py-4 mt-10 border border-solid border-orange-400 bg-purple-500 outline-none w-[300px] mx-auto placeholder-white placeholder-opacity-50 rounded-md"
+        />
+        <button
+          id="tinhTong"
+          class="px-8 py-6 w-[400px] mx-auto bg-purple-500 text-xl mt-4 text-white rounded-md"
+        >
+          Tính tổng các số chẵn từ 1 đến số đó
+        </button>
+        <span
+          id="tongSoChan"
+          class="px-8 py-6 bg-purple-500 text-white mt-4 w-[200px] mx-auto text-center rounded-md hidden"
+        ></span>
+      </div>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <!-- Có bao nhiêu số chia hết cho 3 từ 0-1000 -->
+    <div
+      class="px-8 py-6 bg-purple-500 text-white mt-4 w-[400px] mx-auto text-center rounded-md"
+    >
+      Số chia hết cho 3 từ 0-1000 là:
+      <span class="mx-4" id="soChiaHetCho3"></span>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <!-- In ra 10 thẻ Div  -->
+    <div class="container mx-auto my-10">
+      <button
+        id="inTheDiv"
+        class="block px-8 py-6 bg-purple-500 text-white mt-4 w-[400px] text-center rounded-md mx-auto"
+      >
+        Click để in 10 thẻ Div
+      </button>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <div class="container mx-auto my-20">
+      <div
+        class="px-8 py-6 bg-purple-500 text-white mt-4 w-[600px] mx-auto text-center rounded-md"
+      >
+        Số nguyên dương nhỏ nhất sao cho 1+2+…+ n > 10000 là:
+        <span id="showN"></span>
+      </div>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <!-- Viết chương trình nhập vào 2 số x, n, tính tổng: S(n)=x+x^2+x^3+…+x^n (Sử dụng vòng lặp và hàm) -->
+
+    <div class="container mx-auto my-10">
+      <div class="flex flex-col">
+        <div
+          class="px-8 py-6 w-[400px] mx-auto bg-purple-500 text-xl mt-4 text-white rounded-md"
+        >
+          Tính tổng các luỹ thừa sao cho S(n)=x+x^2+x^3+…+x^n
+        </div>
+        <input
+          id="soTuNhienX"
+          placeholder="Nhập số X"
+          type="text"
+          class="text-center text-white py-4 mt-10 border border-solid border-orange-400 bg-purple-500 outline-none w-[300px] mx-auto placeholder-white placeholder-opacity-50 rounded-md"
+        />
+        <input
+          id="soTuNhienY"
+          placeholder="Nhập số Y"
+          type="text"
+          class="text-center text-white py-4 mt-10 border border-solid border-orange-400 bg-purple-500 outline-none w-[300px] mx-auto placeholder-white placeholder-opacity-50 rounded-md"
+        />
+        <button
+          id="tinhTongLuyThua"
+          class="px-8 py-6 w-[400px] mx-auto bg-purple-500 text-xl mt-4 text-white rounded-md"
+        >
+          Tính tổng các luỹ thừa
+        </button>
+        <span
+          id="tongLuyThua"
+          class="px-8 py-6 bg-purple-500 text-white mt-4 w-[200px] mx-auto text-center rounded-md"
+        ></span>
+      </div>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <!-- Tính giai thừa  -->
+    <div class="container mx-auto">
+      <div class="flex flex-col">
+        <div
+          class="px-8 py-6 w-[400px] mx-auto bg-purple-500 text-xl mt-4 text-white rounded-md"
+        >
+          Tính giai thừa = 1x2x3...xn
+        </div>
+        <input
+          id="soTuNhienBatKi"
+          placeholder="Nhập số tự nhiên bất kì"
+          type="text"
+          class="text-center text-white py-4 mt-10 border border-solid border-orange-400 bg-purple-500 outline-none w-[300px] mx-auto placeholder-white placeholder-opacity-50 rounded-md"
+        />
+        <button
+          id="tinhGiaiThua"
+          class="px-8 py-6 w-[400px] mx-auto bg-purple-500 text-xl mt-4 text-white rounded-md"
+        >
+          Tính tích số từ 1 cho tới số đó
+        </button>
+        <span
+          id="showGiaiThua"
+          class="px-8 py-6 bg-purple-500 text-white mt-4 w-[200px] mx-auto text-center rounded-md"
+        ></span>
+      </div>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <div class="container mx-auto my-10">
+      <div class="flex flex-col">
+        <input
+          id="nhap1SoTuNhienBatKi"
+          placeholder="Nhập số tự nhiên bất kì"
+          type="text"
+          class="text-center text-white py-4 mt-10 border border-solid border-orange-400 bg-purple-500 outline-none w-[300px] mx-auto placeholder-white placeholder-opacity-50 rounded-md"
+        />
+        <button
+          id="inToiSoDo"
+          class="px-8 py-6 w-[400px] mx-auto bg-purple-500 text-xl mt-4 text-white rounded-md"
+        >
+          In ra các số tới số đó
+        </button>
+        <span
+          id="showSo"
+          class="px-8 py-6 bg-purple-500 text-white mt-4 w-full mx-auto text-center rounded-md"
+        ></span>
+      </div>
+    </div>
+    <!-- Viết chương trình có một input, một button. Khi click vào button thì in ra các số nguyên từ 1 tới giá trị của input -->
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
